@@ -611,10 +611,6 @@ body{padding-top:var(--hh,0px)}
       <button class="pile-label" type="button" aria-label="Xem tất cả Motion Graphic">MOTION GRAPHIC</button>
       <div class="pile-cards"></div>
     </div>
-    <div class="pile" data-k="kv">
-      <button class="pile-label" type="button" aria-label="Xem tất cả Key Visual">KEY VISUAL</button>
-      <div class="pile-cards"></div>
-    </div>
   </main>
 
   <footer>© <span id="yr"></span> HẬU NGUYỄN</footer>
@@ -981,7 +977,7 @@ syncHash();
 if(LANG==='vi'){document.documentElement.lang='vi';applyLang(document.body)}/*I18NINIT*/
 if(LANG==='vi'){document.documentElement.lang='vi';applyLang(document.body)}/*I18NINIT*/
 /* Khởi tạo */
-buildPile('motion');buildPile('kv');fitPiles();addEventListener('resize',fitPiles);
+buildPile('motion');fitPiles();addEventListener('resize',fitPiles);
 if(matchMedia('(hover:hover)').matches){
   document.querySelectorAll('.pile').forEach(p=>{
     const l=$('.pile-label',p);
